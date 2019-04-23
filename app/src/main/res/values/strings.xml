@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mentionme</string>
+    <string name="title_referrer">Referrer</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_referee">Referee</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="privacy_rights">
+        <u>More info and your privacy rights</u>
+    </string>
+
+</resources>

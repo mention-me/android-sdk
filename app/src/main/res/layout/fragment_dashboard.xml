@@ -1,0 +1,299 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="Fragments.DashboardFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/constraintLayout">
+
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/titleTextView"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@android:color/black" android:textSize="16sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text=" • Introduce Company name to your friends."
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+            <TextView
+                    android:text="How it Works"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:textSize="16sp"/>
+            <TextView
+                    android:text=" • Give your friends 20% off when they place their first order with Company name."
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+            <TextView
+                    android:text=" • And to say thanks we'll give you 20% off your next order for each friend who purchases for the first time."
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/referralsTextView" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" android:textSize="20sp"/>
+            <TextView
+                    android:text="Successful Referrals"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/referralsTextView"/>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    android:background="@android:color/white" android:id="@+id/constraintLayout3">
+
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                    android:text="Invites sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            />
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    android:background="@android:color/white" android:id="@+id/constraintLayout4">
+
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                    android:text="Clicks on Invites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView20" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"/>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    android:background="@android:color/white" android:id="@+id/constraintLayout5">
+
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+                    android:background="@android:color/white" android:id="@+id/whiteView">
+
+                <Button
+                        android:text="LET ME SHARE USING MY NAME"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp" android:id="@+id/shareButton"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        android:background="#cc9d61"
+                        android:textColor="@android:color/white" android:textSize="16sp"
+                        app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nameSurnameTextView"/>
+                <TextView
+                        android:text="TELL THEM IN PERSON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" android:textColor="@android:color/black"/>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView23"
+                        android:background="@android:color/black" android:id="@+id/constraintLayout6">
+
+                </android.support.constraint.ConstraintLayout>
+                <TextView
+                        android:text="Just tell your friends to mention your name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView24" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="Friends can simply enter your name at checkout to get 20% off."
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView25" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView24" android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nameSurnameTextView" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25"
+                        android:textColor="@android:color/darker_gray" android:textSize="18sp"/>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/shareButton"
+                        android:background="@android:color/darker_gray" android:id="@+id/constraintLayout7">
+
+                </android.support.constraint.ConstraintLayout>
+                <Button
+                        android:text="share by email"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/shareByEmailButton" android:background="@null"
+                        android:textColor="@android:color/black" android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"/>
+                <Button
+                        android:text="by facebook"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/shareByFacebookButton" android:background="@null"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                <Button
+                        android:text="share a link"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/shareByLinkButton" android:background="@null"
+                        android:textColor="@android:color/black" android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout11"/>
+                <Button
+                        android:text="by messenger"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:id="@+id/shareByMessengerButton" android:background="@null"
+                        android:textColor="@android:color/black" android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.185"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"/>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintTop_toBottomOf="@+id/shareByEmailButton"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" android:background="@android:color/darker_gray"
+                        android:id="@+id/constraintLayout8">
+
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/shareByFacebookButton"
+                        android:background="@android:color/darker_gray" android:id="@+id/constraintLayout10">
+
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/shareByMessengerButton"
+                        android:background="@android:color/darker_gray" android:id="@+id/constraintLayout11">
+
+                </android.support.constraint.ConstraintLayout>
+                <TextView
+                        android:text="Track your rewards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView27" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/shareByLinkButton"
+                        android:textColor="@android:color/black" android:textSize="18sp"
+                        android:layout_marginTop="8dp"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" android:id="@+id/rewardsView"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/invitesTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clicksOnInvitesTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

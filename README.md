@@ -7,7 +7,8 @@ Supercharge your customer growth with referral marketing through Mention Me
 * Uniquely captures word of mouth sharing
 * Best practice insight from our Client Success Team
 
-This is an SDK for clients of Mention Me to integrate referral into their iOS apps.
+This is an SDK for clients of Mention Me to integrate referral into their Android apps.
+
 If you're interested in becoming a client, [please contact us first](https://blog.mention-me.com/contact-us).
 
 ## Installation
